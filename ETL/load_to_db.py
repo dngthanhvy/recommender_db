@@ -3,7 +3,7 @@ import time
 import pandas as pd
 import psycopg2
 
-from settings import db_config, DATASET_PATH
+from ETL.settings import db_config, DATASET_PATH
 
 
 def connect(db_config):
@@ -137,7 +137,7 @@ if __name__ == '__main__':
     # Create the tables
     print("→ Creating the tables...")
     with conn.cursor() as create_tables_cursor:
-        create_tables_cursor.execute(open("schema_init.sql", "r").read())
+        create_tables_cursor.execute(open("../schema_init.sql", "r").read())
     print("\t✓ Done! Tables created.\n")
 
     insert_time_start = time.time()
