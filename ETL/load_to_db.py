@@ -3,7 +3,7 @@ import time
 import pandas as pd
 import psycopg2
 
-from ETL.settings import db_config, DATASET_PATH
+from settings import db_config, DATASET_PATH
 
 
 def connect(db_config):
