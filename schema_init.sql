@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS public.libelle
     id bigint NOT NULL,
     name character varying(255) NOT NULL,
     family_id bigint NOT NULL,
-    price numeric NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -41,6 +40,7 @@ CREATE TABLE IF NOT EXISTS public.transaction
     libelle_id bigint NOT NULL,
     ticket_id bigint NOT NULL,
     quantity integer NOT NULL,
+	price numeric NOT NULL
     PRIMARY KEY (id)
 );
 
