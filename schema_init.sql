@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS public.transaction
     libelle_id bigint NOT NULL,
     ticket_id bigint NOT NULL,
     quantity integer NOT NULL,
-	price numeric NOT NULL
+    price numeric NOT NULL,
     PRIMARY KEY (id)
 );
 
