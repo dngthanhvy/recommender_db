@@ -11,6 +11,6 @@ db_config = {
     'DB_NAME' : os.getenv('DB_NAME'),
     'PORT' : os.getenv('PORT'),
     'HOST' : os.getenv('HOST'),
-    'USER' : os.getenv('USER'),
+    'USER' : 'postgres',
     'PASSWORD' : os.getenv('PASSWORD'),
 }
